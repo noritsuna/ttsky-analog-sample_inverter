@@ -5,7 +5,7 @@ This is a sample project for the analog circuit of the TinyTapeout SKY130.
 
 
 # Set up the Development Environment
-## Using the ISHI-Kai setup script
+## Using the ISHI-Kai's setup script
 
 - [ISHI-Kai setup script](https://github.com/ishi-kai/OpenEDA-PDK_SetupScript)
 
@@ -19,24 +19,27 @@ bash pdk_sky130-setup.sh
 ```
 
 
-## Using the ISHI-Kai setup script
+## Using the ISHI-Kai's WSL Image
 - [Image for WSL version of SKY130 (TinyTapeout)](https://www.noritsuna.jp/download/ubuntu2204_ishi-kai_EDA.WSL_SKY130.tar.xz)
     - ID: ishi-kai
     - Pass: ishi-kai
 
-### Installing WSL Images
+### Installing WSL Image
 `wsl --import-in-place ubuntu2204_ishi-kai_EDA .\ubuntu2204_ishi-kai_EDA\ext4.vhdx`
 
 The above command will be recognised. To execute it, please use the included "ubuntu2204_ishi-kai_EDA.lnk".  
 
 
-### Deleting WSL Images
+### Deleting WSL Image
 Please note that image files will also be deleted.  
 
 `wsl --unregister ubuntu2204_ishi-kai_EDA`
 
 
 # Create a Submission File
+Since it must be executed on magic, please launch magic.  
+- If you created the GDS file using Klayout, please read it as a GDS file.
+
 ## Make a LEF file
 - If created with Klayout, flatten it.  
 - Execute the following command on the magic command line.  
