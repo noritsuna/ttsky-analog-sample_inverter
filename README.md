@@ -41,7 +41,7 @@ Please note that image files will also be deleted.
 - If created with Klayout, flatten it.  
 - Execute the following command on the magic command line.  
 
-`lef write ../lef/tt_um_project_name.lef -pinonlyls`
+`lef write ../lef/tt_um_project_name.lef -pinonly`
 
 
 ## Make a Submission GDS file
