@@ -40,6 +40,11 @@ Please note that image files will also be deleted.
 Since it must be executed on magic, please launch magic.  
 - If you created the GDS file using Klayout, please read it as a GDS file.
 
+
+## Delete "metX.pin" layers
+Please delete all label pin layers added for PEX.  
+
+
 ## Make a LEF file
 - If created with Klayout, flatten it.  
 - Execute the following command on the magic command line.  
